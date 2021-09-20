@@ -1,0 +1,40 @@
+
+<ion-content >
+<div style="position: absolute;width: 100%;">
+  <label class="label-signin">Sign in</label>
+  <label class="label-center small-text-style">Login to your account</label>
+</div>
+<div class="background-gradient">
+  <ion-card class="ion-card-align">
+    <ion-item class="login-input-field-style">
+      <ion-label class="label-align-syle"> <ion-icon name="md-person"></ion-icon></ion-label>
+      <ion-input  placeholder="Username or e-mail" type="text" tappable></ion-input>
+    </ion-item>
+    <ion-item class="login-input-field-style">
+      <ion-label class="label-align-syle"> <ion-icon class="rotate-icon" name="ios-key"></ion-icon></ion-label>
+      <ion-input   placeholder="Password" name="password"   type="password" tappable></ion-input>
+      <ion-icon name="ios-eye" item-right></ion-icon>
+    </ion-item>
+    <p>
+     <ion-label item-left class="forgot-password-label" tappable>Forgot Password?</ion-label>
+    </p>
+    <p>
+     <ion-label class="text-gradient" item-right><ion-checkbox style="padding: 0px 10px;rgba(255, 98, 43, 0.83);" tappable class="custom-check-box"></ion-checkbox >Keep me signed</ion-label>
+    </p>
+    <div class="login-button-1">
+      <button class="login-button-alginment" tappable style="font-size: 1.6rem;font-weight: 900;"(click)="login()">SIGN IN</button>
+    </div>
+  </ion-card>
+</div>
+<span class="bottom-span-align">
+   <p style="width: 60%;">
+  <ion-label item-left class=" label-style1" tappable>Do you have an account?</ion-label>
+</p>
+<p style="width: 40%;">
+  <ion-label class="label-style-text-gradient" tappable item-right (click)="openSingUpPage()">Sign up Now!</ion-label>
+</p>
+</span>
+
+</ion-content>
+
+

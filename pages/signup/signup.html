@@ -1,0 +1,80 @@
+<ion-content>
+  <div style="position: absolute; width: 100%">
+    <label class="label-signin">Sign up</label>
+    <label class="label-center small-text-style">Create a new account</label>
+  </div>
+  <div class="background-gradient">
+    <ion-card class="ion-card-align">
+      <ion-item class="login-input-field-style">
+        <ion-label class="label-align-syle">
+          <ion-icon name="md-person"></ion-icon
+        ></ion-label>
+        <ion-input placeholder="Full name" type="text" tappable></ion-input>
+      </ion-item>
+      <ion-item class="login-input-field-style">
+        <ion-label class="label-align-syle">
+          <ion-icon name="md-mail"></ion-icon
+        ></ion-label>
+        <ion-input
+          placeholder="E-mail Address"
+          type="text"
+          tappable
+        ></ion-input>
+      </ion-item>
+      <ion-item class="login-input-field-style">
+        <ion-label class="label-align-syle">
+          <ion-icon name="phone-portrait"></ion-icon
+        ></ion-label>
+        <ion-input placeholder="Phone number" type="tel" tappable></ion-input>
+      </ion-item>
+      <ion-item class="login-input-field-style">
+        <ion-label class="label-align-syle">
+          <ion-icon class="rotate-icon" name="ios-key"></ion-icon
+        ></ion-label>
+        <ion-input
+          placeholder="Password"
+          name="password"
+          tappable
+          type="password"
+        ></ion-input>
+        <ion-icon name="ios-eye" item-right tappable> </ion-icon>
+      </ion-item>
+      <ion-item class="login-input-field-style">
+        <ion-label class="label-align-syle">
+          <ion-icon class="rotate-icon" name="ios-key"></ion-icon
+        ></ion-label>
+        <ion-input
+          placeholder="Confirm Password"
+          name="confirmpassword"
+          tappable
+          type="password"
+        ></ion-input>
+        <ion-icon name="ios-eye" item-right tappable></ion-icon>
+      </ion-item>
+      <p style="width: 70%">
+        <ion-label item-left class="forgot-password-label" tappable
+          >Already have an account?</ion-label
+        >
+      </p>
+      <p style="width: 30%">
+        <ion-label
+          class="label-style-text-gradient"
+          item-right
+          tappable
+          (click)="openSingInPage()"
+          >Sign in Now!</ion-label
+        >
+      </p>
+    </ion-card>
+  </div>
+
+  <div class="login-button-1">
+    <button
+      class="login-button-alginment"
+      tappable
+      style="font-size: 1.6rem; font-weight: 900"
+    >
+      SIGN UP
+    </button>
+  </div>
+</ion-content>

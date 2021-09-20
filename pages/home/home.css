@@ -1,0 +1,138 @@
+page-home .menu-icon {
+  position: relative;
+  width: 44px;
+  height: 34px;
+  transition: transform 0.5s;
+}
+page-home .menu-icon span {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #052b23;
+  transition: background 0.5s;
+}
+page-home .menu-icon span::before,
+page-home .menu-icon span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-6px);
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #052b23;
+  transition: transform 0.5s;
+}
+page-home .menu-icon span::after {
+  transform: translateY(6px);
+}
+page-home .menu-icon.is-opened span {
+  background: transparent;
+}
+page-home .menu-icon.is-opened span::before {
+  transform: translateY(0) rotate(45deg);
+}
+page-home .menu-icon.is-opened span::after {
+  transform: translateY(0) rotate(-45deg);
+}
+page-home .menu-icon.is-opened {
+  transform: rotate(180deg);
+}
+page-home .menu-icon svg {
+  position: relative;
+  z-index: 1;
+  fill: transparent;
+  stroke-width: 1px;
+  stroke: #052b23;
+}
+page-home .menu-icon svg {
+  stroke-dashoffset: 170;
+  stroke-dasharray: 170;
+  transition: stroke-dashoffset 0.5s;
+}
+page-home .menu-icon.is-opened {
+  stroke-dashoffset: 0;
+}
+page-home .wayfinder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  margin: 0;
+  padding: 0px;
+}
+page-home .wayfinder .logo {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+page-home .wayfinder .logo span {
+  font-weight: 300;
+}
+page-home .toolbar-background-md,
+page-home .toolbar-background-ios {
+  background: #fff !important;
+}
+page-home .settings-icon {
+  transform: rotate(-90deg);
+  float: right;
+  font-size: 2.6rem;
+  font-weight: 900;
+  position: absolute;
+  right: 0px;
+  top: 25px;
+  margin-right: 20px;
+}
+page-home .searchbar-in-baground-image {
+  background-image: url('../../assets/imgs/website-startups.jpg');
+  background-color: #ccc;
+  min-height: 30vh;
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+page-home .scroll-content {
+  padding: 0px !important;
+}
+page-home .label-style-text-gradient {
+  background: -webkit-linear-gradient(360deg, rgba(254, 29, 47, 0.91), #ffbd31);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  float: right;
+}
+page-home ion-slides ion-slide {
+  padding: 10px;
+}
+page-home .card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 1.4em;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+page-home .card-subtitle {
+  font-size: 1em;
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  color: #fff;
+}
+page-home .header-label-main {
+  font-size: 2rem;
+  margin-left: 10px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.75);
+}
