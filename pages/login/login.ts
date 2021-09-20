@@ -6,7 +6,7 @@ import { HomePage } from '../home/home';
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
-  styleUrls: ['./login.css'],
+  styleUrls: ['login.css'],
 })
 export class LoginPage {
   @ViewChild(Nav) nav: Nav;

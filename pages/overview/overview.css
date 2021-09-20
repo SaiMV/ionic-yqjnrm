@@ -1,0 +1,46 @@
+page-overview .gradient-text {
+  background: -webkit-linear-gradient(360deg, rgba(254, 29, 47, 0.91), #ffbd31);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+page-overview .hotel-description {
+  line-height: 19px;
+  color: grey;
+  font-size: 11px;
+}
+page-overview .my-nav {
+  list-style-type: disc;
+}
+page-overview .details-header-background {
+  background-image: url('../../assets/imgs/website-startups.jpg');
+  background-color: #ccc;
+  min-height: 30vh;
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+page-overview .uuu {
+  background-image: url('../../assets/imgs/website-startups.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 20vh;
+  height: 20vh;
+  margin: 5px;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  border-radius: 7px;
+}
+page-overview .divi {
+  margin-top: 45px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  line-height: 22px;
+}
+page-overview .col img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
