@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
+// import { StatusBar } from '@ionic-native/status-bar';
 import { OverviewPage } from '../overview/overview';
-import { ReadVarExpr } from '@angular/compiler';
+// import { ReadVarExpr } from '@angular/compiler';
 import { ReviewPage } from '../review/review';
 import { IteneraryPage } from '../itenerary/itenerary';
 /**
