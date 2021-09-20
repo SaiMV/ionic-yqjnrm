@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 @Component({
   templateUrl: 'app.html',
+  styleUrls: ['styles.css'],
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
@@ -18,8 +19,9 @@ export class MyApp {
   pages: Array<{ title: string; component: any }>;
   public innerHeightOfDevice: string;
 
-  constructor(public platform: Platform) // public statusBar: StatusBar,
-  // public splashScreen: SplashScreen
+  constructor(
+    public platform: Platform // public statusBar: StatusBar,
+  ) // public splashScreen: SplashScreen
   {
     this.initializeApp();
 

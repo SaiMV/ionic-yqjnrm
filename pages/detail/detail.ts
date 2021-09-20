@@ -15,6 +15,7 @@ import { IteneraryPage } from '../itenerary/itenerary';
 @Component({
   selector: 'page-detail',
   templateUrl: 'detail.html',
+  styleUrls: ['detail.css'],
 })
 export class DetailPage {
   private tabs: { title: string; root: any; icon: string }[];
