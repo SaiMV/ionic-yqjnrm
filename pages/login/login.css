@@ -1,4 +1,4 @@
-/* page-login .background-gradient {
+.background-gradient {
   height: 80vh;
   background-image: linear-gradient(
     164deg,
@@ -10,18 +10,18 @@
     #fff 65.13%
   );
 }
-page-login ion-content,
-page-login .scroll-content {
+ion-content,
+.scroll-content {
   padding: 0px !important;
 }
-page-login .ion-card-align {
+.ion-card-align {
   margin-top: 25vh;
   height: 50vh;
   min-height: 300px;
   position: absolute;
   border-radius: 10px;
 }
-page-login .label-signin {
+.label-signin {
   margin-top: 10vh;
   font-size: 2.4rem;
   text-align: center;
@@ -29,13 +29,13 @@ page-login .label-signin {
   width: 100%;
   display: block;
 }
-page-login .label-center {
+.label-center {
   display: block;
   text-align: center;
   padding: 20px;
   font-weight: 200;
 }
-page-login .login-input-field-style {
+.login-input-field-style {
   border: 1px solid rgba(205, 205, 205, 0.56);
   width: calc(100% - 10vh);
   margin: 5vh;
@@ -43,30 +43,30 @@ page-login .login-input-field-style {
   padding: 0px;
   margin-bottom: 0px;
 }
-page-login page-login .login-input-field-style:last-child {
+.login-input-field-style:last-child {
   margin-top: 5%;
   border-bottom: 1px solid rgba(205, 205, 205, 0.56) !important;
 }
-page-login .icon {
+.icon {
   color: rgba(146, 146, 146, 1);
   padding-top: 3px;
 }
-page-login .rotate-icon {
+.rotate-icon {
   transform: rotate(90deg);
 }
-page-login .login-input-field-style .label-align-syle {
+.login-input-field-style .label-align-syle {
   margin: 0px;
   height: 100%;
   width: 45px;
   padding: 12px;
   border-right: 1px solid rgba(205, 205, 205, 0.56);
 }
-page-login .card-md > .item:last-child,
-page-login .card-md > .item-wrapper:last-child .item {
+.card-md > .item:last-child,
+.card-md > .item-wrapper:last-child .item {
   border-bottom: 1px solid rgba(205, 205, 205, 0.56);
 }
 @media only screen and (max-width: 600px) {
-  page-login .background-gradient {
+  .background-gradient {
     height: 75vh;
     background-image: linear-gradient(
       155deg,
@@ -79,21 +79,21 @@ page-login .card-md > .item-wrapper:last-child .item {
     );
   }
 }
-page-login .forgot-password-label {
+.forgot-password-label {
   color: rgba(146, 146, 146, 1);
   margin-left: 30px;
   font-size: 1.4rem;
 }
-page-login .card p {
+.card p {
   width: 50%;
   display: inline-block;
   float: left;
 }
-page-login span p {
+span p {
   display: inline-block;
   float: left;
 }
-page-login .label .checkbox .checkbox-icon {
+.label .checkbox .checkbox-icon {
   border-radius: 2px;
   width: 14px;
   height: 14px;
@@ -102,7 +102,7 @@ page-login .label .checkbox .checkbox-icon {
   border-color: rgba(254, 29, 47, 0.91);
   border-width: 1px;
 }
-page-login .text-gradient {
+.text-gradient {
   background: -webkit-linear-gradient(360deg, rgba(254, 29, 47, 0.91), #ffbd31);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -110,33 +110,33 @@ page-login .text-gradient {
   float: right;
   margin-right: 6vh;
 }
-page-login .small-text-style {
+.small-text-style {
   padding-top: 5px;
   font-size: 1.4rem;
 }
-page-login .custom-check-box .checkbox-checked .checkbox-inner {
+.custom-check-box .checkbox-checked .checkbox-inner {
   border-color: rgba(254, 29, 47, 0.91);
   width: 4px;
   height: 8px;
   top: 1px;
   left: 4px;
 }
-page-login .custom-check-box .checkbox-checked {
+.custom-check-box .checkbox-checked {
   border-color: rgba(254, 29, 47, 0.91);
   background-color: white;
 }
-page-login .bottom-span-align {
+.bottom-span-align {
   margin-bottom: 0px;
   bottom: 0px;
   position: absolute;
   width: 100%;
 }
-page-login .bottom-span-align .label-style1 {
+.bottom-span-align .label-style1 {
   color: #929292;
   margin-left: 30px;
   font-size: 1.4rem;
 }
-page-login .bottom-span-align .label-style-text-gradient {
+.bottom-span-align .label-style-text-gradient {
   background: -webkit-linear-gradient(360deg, rgba(254, 29, 47, 0.91), #ffbd31);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -144,15 +144,15 @@ page-login .bottom-span-align .label-style-text-gradient {
   float: right;
   margin-right: 5vh;
 }
-page-login .social-cards ion-col {
+.social-cards ion-col {
   padding: 0;
 }
-page-login .login-button-1 {
+.login-button-1 {
   background-color: rgba(255, 255, 255, 0.12);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-page-login .login-button-alginment {
+.login-button-alginment {
   max-width: 90%;
   background-image: linear-gradient(
     to right,
@@ -172,61 +172,57 @@ page-login .login-button-alginment {
   color: white;
   margin-top: 6%;
 }
-.platform-tablet page-login .label-signin {
+.platform-tablet .label-signin {
   font-size: 3.6rem;
   margin-top: 15vh;
 }
-.platform-tablet page-login .small-text-style {
+.platform-tablet .small-text-style {
   font-weight: 400;
   font-size: 2.2rem;
 }
-.platform-tablet page-login ion-input {
+.platform-tablet ion-input {
   font-size: 2.2rem;
 }
-.platform-tablet page-login .forgot-password-label {
+.platform-tablet .forgot-password-label {
   font-size: 2rem;
   margin-left: 5vh;
   margin-top: 2vh;
 }
-.platform-tablet page-login .text-gradient {
+.platform-tablet .text-gradient {
   font-size: 2.4rem;
   margin-top: 2vh;
 }
-.platform-tablet page-login .login-button-alginment {
+.platform-tablet .login-button-alginment {
   height: 60px;
   font-size: 2.4rem !important;
   max-width: 90%;
 }
-.platform-tablet page-login .bottom-span-align .label-style1 {
+.platform-tablet .bottom-span-align .label-style1 {
   font-size: 2.4rem;
 }
-.platform-tablet page-login .bottom-span-align .label-style-text-gradient {
+.platform-tablet .bottom-span-align .label-style-text-gradient {
   font-size: 2.4rem;
 }
-.platform-tablet page-login .bottom-span-align {
+.platform-tablet .bottom-span-align {
   margin-bottom: 30px;
 }
-.platform-tablet page-login .ion-card-align {
+.platform-tablet .ion-card-align {
   margin-top: 35vh;
   height: 125vh;
   min-height: 400px;
   max-height: 550px;
 }
-.platform-tablet page-login .icon {
+.platform-tablet .icon {
   font-size: 2.5rem !important;
 }
-.platform-tablet page-login .label .checkbox .checkbox-icon {
+.platform-tablet .label .checkbox .checkbox-icon {
   width: 20px;
   height: 20px;
   top: 3px;
 }
-.platform-tablet
-  page-login
-  .custom-check-box
-  .checkbox-checked
-  .checkbox-inner {
+.platform-tablet .custom-check-box .checkbox-checked .checkbox-inner {
   width: 5px;
   height: 12px;
   top: 1px;
   left: 6px;
-} */
+}

@@ -1,7 +1,7 @@
 import { Component, Input, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+// import { StatusBar } from '@ionic-native/status-bar';
+// import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
@@ -18,17 +18,15 @@ export class MyApp {
   pages: Array<{ title: string; component: any }>;
   public innerHeightOfDevice: string;
 
-  constructor(
-    public platform: Platform,
-    public statusBar: StatusBar,
-    public splashScreen: SplashScreen
-  ) {
+  constructor(public platform: Platform) // public statusBar: StatusBar,
+  // public splashScreen: SplashScreen
+  {
     this.initializeApp();
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      splashScreen.hide();
+      // splashScreen.hide();
       // let innerClientDevHight: any = platform.height();
       // this.innerHeightOfDevice = innerClientDevHight + "px !important;";
       // document.querySelector('ion-app').setAttribute("style", "height:" + this.innerHeightOfDevice);
@@ -49,8 +47,8 @@ export class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      this.statusBar.backgroundColorByHexString('#ffffff');
-      this.splashScreen.hide();
+      // this.statusBar.backgroundColorByHexString('#ffffff');
+      // this.splashScreen.hide();
     });
   }
 
