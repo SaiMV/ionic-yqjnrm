@@ -1,4 +1,4 @@
-page-signup .background-gradient {
+.background-gradient {
   height: 80vh;
   background-image: linear-gradient(
     164deg,
@@ -10,11 +10,11 @@ page-signup .background-gradient {
     #fff 65.13%
   );
 }
-page-signup ion-content,
-page-signup .scroll-content {
+ion-content,
+.scroll-content {
   padding: 0px !important;
 }
-page-signup .ion-card-align {
+.ion-card-align {
   margin-top: 20vh;
   height: 65vh;
   min-height: 350px;
@@ -22,7 +22,7 @@ page-signup .ion-card-align {
   position: absolute;
   border-radius: 10px;
 }
-page-signup .label-signin {
+.label-signin {
   margin-top: 8vh;
   font-size: 2.4rem;
   text-align: center;
@@ -30,13 +30,13 @@ page-signup .label-signin {
   width: 100%;
   display: block;
 }
-page-signup .label-center {
+.label-center {
   display: block;
   text-align: center;
   padding: 20px;
   font-weight: 200;
 }
-page-signup .login-input-field-style {
+.login-input-field-style {
   border: 1px solid rgba(205, 205, 205, 0.56);
   width: calc(100% - 10vh);
   margin: 2vh 5vh;
@@ -44,30 +44,30 @@ page-signup .login-input-field-style {
   padding: 0px;
   margin-bottom: 0px;
 }
-page-signup page-login .login-input-field-style:last-child {
+page-login .login-input-field-style:last-child {
   margin-top: 5%;
   border-bottom: 1px solid rgba(205, 205, 205, 0.56) !important;
 }
-page-signup .icon {
+.icon {
   color: rgba(146, 146, 146, 1);
   padding-top: 3px;
 }
-page-signup .rotate-icon {
+.rotate-icon {
   transform: rotate(90deg);
 }
-page-signup .login-input-field-style .label-align-syle {
+.login-input-field-style .label-align-syle {
   margin: 0px;
   height: 100%;
   padding: 12px;
   width: 45px;
   border-right: 1px solid rgba(205, 205, 205, 0.56);
 }
-page-signup .card-md > .item:last-child,
-page-signup .card-md > .item-wrapper:last-child .item {
+.card-md > .item:last-child,
+.card-md > .item-wrapper:last-child .item {
   border-bottom: 1px solid rgba(205, 205, 205, 0.56);
 }
 @media only screen and (max-width: 600px) {
-  page-signup .background-gradient {
+  .background-gradient {
     height: 75vh;
     background-image: linear-gradient(
       155deg,
@@ -80,20 +80,20 @@ page-signup .card-md > .item-wrapper:last-child .item {
     );
   }
 }
-page-signup .forgot-password-label {
+.forgot-password-label {
   color: rgba(146, 146, 146, 1);
   margin-left: 30px;
   font-size: 1.4rem;
 }
-page-signup .card p {
+.card p {
   display: inline-block;
   float: left;
 }
-page-signup span p {
+span p {
   display: inline-block;
   float: left;
 }
-page-signup .label .checkbox .checkbox-icon {
+.label .checkbox .checkbox-icon {
   border-radius: 2px;
   width: 14px;
   height: 14px;
@@ -102,7 +102,7 @@ page-signup .label .checkbox .checkbox-icon {
   border-color: rgba(254, 29, 47, 0.91);
   border-width: 1px;
 }
-page-signup .text-gradient {
+.text-gradient {
   background: -webkit-linear-gradient(360deg, rgba(254, 29, 47, 0.91), #ffbd31);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -110,33 +110,33 @@ page-signup .text-gradient {
   float: right;
   margin-right: 6vh;
 }
-page-signup .small-text-style {
+.small-text-style {
   padding-top: 5px;
   font-size: 1.4rem;
 }
-page-signup .custom-check-box .checkbox-checked .checkbox-inner {
+.custom-check-box .checkbox-checked .checkbox-inner {
   border-color: rgba(254, 29, 47, 0.91);
   width: 4px;
   height: 8px;
   top: 1px;
   left: 4px;
 }
-page-signup .custom-check-box .checkbox-checked {
+.custom-check-box .checkbox-checked {
   border-color: rgba(254, 29, 47, 0.91);
   background-color: white;
 }
-page-signup .bottom-span-align {
+.bottom-span-align {
   margin-bottom: 0px;
   bottom: 0px;
   position: absolute;
   width: 100%;
 }
-page-signup .bottom-span-align .label-style1 {
+.bottom-span-align .label-style1 {
   color: #929292;
   margin-left: 30px;
   font-size: 1.4rem;
 }
-page-signup .label-style-text-gradient {
+.label-style-text-gradient {
   background: -webkit-linear-gradient(360deg, rgba(254, 29, 47, 0.91), #ffbd31);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -144,7 +144,7 @@ page-signup .label-style-text-gradient {
   float: right;
   margin-right: 5vh;
 }
-page-signup .login-button-1 {
+.login-button-1 {
   position: absolute;
   bottom: 1%;
   width: 100%;
@@ -152,7 +152,7 @@ page-signup .login-button-1 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-page-signup .login-button-alginment {
+.login-button-alginment {
   background-image: linear-gradient(
     to right,
     rgba(254, 96, 57, 0.91),
@@ -171,42 +171,42 @@ page-signup .login-button-alginment {
   color: white;
   margin-top: 2%;
 }
-.platform-tablet page-signup .ion-card-align {
+.platform-tablet .ion-card-align {
   margin-top: 35vh;
   height: 125vh;
   min-height: 400px;
   max-height: 550px;
 }
-.platform-tablet page-signup .small-text-style {
+.platform-tablet .small-text-style {
   font-weight: 400;
   font-size: 2.2rem;
 }
-.platform-tablet page-signup .label-signin {
+.platform-tablet .label-signin {
   font-size: 3.6rem;
   margin-top: 15vh;
 }
-.platform-tablet page-signup .forgot-password-label {
+.platform-tablet .forgot-password-label {
   font-size: 2.2rem;
   margin-left: 5vh;
   margin-top: 2vh;
 }
-.platform-tablet page-signup .label-style-text-gradient {
+.platform-tablet .label-style-text-gradient {
   font-size: 2.4rem;
 }
-.platform-tablet page-signup .login-button-alginment {
+.platform-tablet .login-button-alginment {
   height: 60px;
   font-size: 2.4rem !important;
   max-width: 90%;
 }
-.platform-tablet page-signup .login-button-1 {
+.platform-tablet .login-button-1 {
   bottom: 10%;
 }
-.platform-tablet page-signup .login-input-field-style:first-child {
+.platform-tablet .login-input-field-style:first-child {
   margin-top: 5vh;
 }
-.platform-tablet page-signup ion-input {
+.platform-tablet ion-input {
   font-size: 2.2rem !important;
 }
-.platform-tablet page-signup .icon {
+.platform-tablet .icon {
   font-size: 2.5rem !important;
 }

@@ -1,98 +1,202 @@
 <ion-header>
-<ion-navbar>
-  <button ion-button menuToggle>
-    <div  class= "menu-icon">
-      <span></span>
-      <svg x="0" y="0" width="40px" height="40px" viewBox="0 0 40 40">
-        <circle cx="22" cy="22" r="22"></circle>
-      </svg>
-    </div>
-  </button>
-  <!--<button ion-button menuToggle (click)="toggleMenuClicked()" >-->
-  <!--<div class="wayfinder">-->
-  <!--<div  [ngClass]= "(isToggleMenuClicked)?'menu-icon is-closed':'menu-icon is-opened'">-->
-  <!--<span></span>-->
-  <!--<svg x="0" y="0" width="44px" height="44px" viewBox="0 0 40 44">-->
-  <!--<circle cx="22" cy="22" r="22"></circle>-->
-  <!--</svg>-->
-  <!--</div>-->
-  <!--</div>-->
-  <!--</button>-->
-  <ion-title><img src="assets/imgs/TravelSpocHeading.png"/></ion-title>
-  <ion-icon name="ios-options-outline" item-right class="settings-icon"></ion-icon>
-</ion-navbar>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <div class="menu-icon">
+        <span></span>
+        <svg x="0" y="0" width="40px" height="40px" viewBox="0 0 40 40">
+          <circle cx="22" cy="22" r="22"></circle>
+        </svg>
+      </div>
+    </button>
+    <!--<button ion-button menuToggle (click)="toggleMenuClicked()" >-->
+    <!--<div class="wayfinder">-->
+    <!--<div  [ngClass]= "(isToggleMenuClicked)?'menu-icon is-closed':'menu-icon is-opened'">-->
+    <!--<span></span>-->
+    <!--<svg x="0" y="0" width="44px" height="44px" viewBox="0 0 40 44">-->
+    <!--<circle cx="22" cy="22" r="22"></circle>-->
+    <!--</svg>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</button>-->
+    <ion-title
+      ><img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnb7jKpJDkjP_VeXemZg3Q2qIIlhyEeWrIELSjSirql46mu866PC8JUG2vVsyqxo8zS2c&usqp=CAU"
+    /></ion-title>
+    <ion-icon
+      name="ios-options-outline"
+      item-right
+      class="settings-icon"
+    ></ion-icon>
+  </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-<div class="searchbar-in-baground-image">
-<p>
-  <ion-label class="label-style-text-gradient" style="width:100%; text-align: center;top:5vh;font-size: 2.2rem;margin:13px 0px 5px 0px;margin-top: 5vh;
-    font-weight: bold;" tappable >EXPERIENCE THE TRAVEL</ion-label>
-  <ion-label class="label-style-text-gradient" style="width:100%;text-align: center;margin:0px;font-size: 2rem;font-weight: bold;" tappable >GO where you feel the most ALIVE </ion-label>
-  <ion-searchbar placeholder="Destinations,Packages,Themes" style="top: 5vh;"></ion-searchbar>
-</p>
-</div>
+  <div class="searchbar-in-baground-image">
+    <p>
+      <ion-label
+        class="label-style-text-gradient"
+        style="
+          width: 100%;
+          text-align: center;
+          top: 5vh;
+          font-size: 2.2rem;
+          margin: 13px 0px 5px 0px;
+          margin-top: 5vh;
+          font-weight: bold;
+        "
+        tappable
+        >EXPERIENCE THE TRAVEL</ion-label
+      >
+      <ion-label
+        class="label-style-text-gradient"
+        style="
+          width: 100%;
+          text-align: center;
+          margin: 0px;
+          font-size: 2rem;
+          font-weight: bold;
+        "
+        tappable
+        >GO where you feel the most ALIVE
+      </ion-label>
+      <ion-searchbar
+        placeholder="Destinations,Packages,Themes"
+        style="top: 5vh"
+      ></ion-searchbar>
+    </p>
+  </div>
 
-  <ion-slides style="height: 30vh;margin: 10px 0px;">
-    <ion-slide   *ngFor="let category of categories">
-        <img src="assets/imgs/website-startups.jpg"/>
-        <div class="card-title" >{{category.title}}</div>
-        <div class="card-subtitle"><ion-icon style="color: #ffac28;padding: 5px;" ios="ios-pin" md="md-pin"></ion-icon>{{category.noOfPlaces}}</div>
+  <ion-slides style="height: 30vh; margin: 10px 0px">
+    <ion-slide *ngFor="let category of categories">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnb7jKpJDkjP_VeXemZg3Q2qIIlhyEeWrIELSjSirql46mu866PC8JUG2vVsyqxo8zS2c&usqp=CAU"
+      />
+      <div class="card-title">{{category.title}}</div>
+      <div class="card-subtitle">
+        <ion-icon
+          style="color: #ffac28; padding: 5px"
+          ios="ios-pin"
+          md="md-pin"
+        ></ion-icon
+        >{{category.noOfPlaces}}
+      </div>
     </ion-slide>
   </ion-slides>
 
-<div>
- <ion-label class="header-label-main" > Tour Packages</ion-label>
-</div>
-<ion-card *ngFor="let card of cards" (click)="navDetailPage()">
-<ion-card-content style="height:100px;padding: 5px;padding-right: 0px">
-  <ion-row col-12 style="padding-right: 0px">
-    <ion-col col-3>  <img style="height:68px;" src="assets/imgs/website-startups.jpg"/>
-      </ion-col>
-    <ion-col col-6>
-      <ion-row style="padding: 0px;font-size: 1.4rem;font-weight: bold;color: rgb(109, 109, 109);">{{card.title}}</ion-row>
-      <ion-row style="color: rgb(140, 140, 140);font-size: .9rem;">5 Days & 4 Nights</ion-row>
-      <ion-row style="color: rgb(140, 140, 140);">
-        <ion-col>
-          <ion-icon style="padding: 5px 5px 5px 0px" ios="ios-car" md="md-car"></ion-icon>
-          <ion-icon style="padding: 5px;" ios="ios-beer" md="md-beer"></ion-icon>
-          <ion-icon style="padding: 5px;" ios="ios-wine" md="md-wine"></ion-icon>
-          <ion-icon style="padding: 5px;"  ios="ios-cafe" md="md-cafe"></ion-icon>
-          <ion-icon style="padding: 5px;" ios="ios-restaurant" md="md-restaurant"></ion-icon>
+  <div>
+    <ion-label class="header-label-main"> Tour Packages</ion-label>
+  </div>
+  <ion-card *ngFor="let card of cards" (click)="navDetailPage()">
+    <ion-card-content style="height: 100px; padding: 5px; padding-right: 0px">
+      <ion-row col-12 style="padding-right: 0px">
+        <ion-col col-3>
+          <img
+            style="height: 68px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnb7jKpJDkjP_VeXemZg3Q2qIIlhyEeWrIELSjSirql46mu866PC8JUG2vVsyqxo8zS2c&usqp=CAU"
+          />
+        </ion-col>
+        <ion-col col-6>
+          <ion-row
+            style="
+              padding: 0px;
+              font-size: 1.4rem;
+              font-weight: bold;
+              color: rgb(109, 109, 109);
+            "
+            >{{card.title}}</ion-row
+          >
+          <ion-row style="color: rgb(140, 140, 140); font-size: 0.9rem"
+            >5 Days & 4 Nights</ion-row
+          >
+          <ion-row style="color: rgb(140, 140, 140)">
+            <ion-col>
+              <ion-icon
+                style="padding: 5px 5px 5px 0px"
+                ios="ios-car"
+                md="md-car"
+              ></ion-icon>
+              <ion-icon
+                style="padding: 5px"
+                ios="ios-beer"
+                md="md-beer"
+              ></ion-icon>
+              <ion-icon
+                style="padding: 5px"
+                ios="ios-wine"
+                md="md-wine"
+              ></ion-icon>
+              <ion-icon
+                style="padding: 5px"
+                ios="ios-cafe"
+                md="md-cafe"
+              ></ion-icon>
+              <ion-icon
+                style="padding: 5px"
+                ios="ios-restaurant"
+                md="md-restaurant"
+              ></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col col-3 style="padding: 0px">
+          <ion-row
+            style="
+              border-top-left-radius: 60px;
+              border-bottom-left-radius: 60px;
+              background-image: linear-gradient(
+                to right,
+                rgba(254, 96, 57, 0.91),
+                rgba(254, 116, 54, 0.85),
+                rgba(255, 98, 43, 0.83) 44.96%,
+                #ffac28 58.4%,
+                #ffcd4e 100%,
+                #ffab38
+              );
+            "
+          >
+            <ion-row
+              col-12
+              style="
+                padding: 0px;
+                padding-left: 20px;
+                font-size: 1.1rem;
+                text-align: center;
+                padding-top: 5px;
+                color: white;
+                height: 20px;
+              "
+            >
+              Starts from
+            </ion-row>
+            <ion-row
+              col-12
+              style="
+                padding: 0px;
+                padding-left: 20px;
+                pading-top: 10px;
+                text-align: center;
+                color: white;
+                font-size: 1.1rem;
+                font-weight: bold;
+                height: 20px;
+              "
+            >
+              INR 15,000
+            </ion-row>
+          </ion-row>
         </ion-col>
       </ion-row>
-    </ion-col>
-    <ion-col col-3 style="padding: 0px;">
-      <ion-row style="border-top-left-radius: 60px;border-bottom-left-radius: 60px;
-      background-image: linear-gradient(to right, rgba(254, 96, 57, 0.91), rgba(254, 116, 54, 0.85), rgba(255, 98, 43, 0.83) 44.96%, #ffac28 58.4%, #ffcd4e 100%, #ffab38);">
-        <ion-row col-12 style="padding: 0px;
-padding-left: 20px;font-size: 1.1rem;text-align: center;padding-top: 5px;color: white;height: 20px;">
-          Starts from
-        </ion-row>
-        <ion-row col-12 style="padding: 0px;
-padding-left: 20px;pading-top:10px;
-text-align: center;
-color: white;font-size: 1.1rem;font-weight: bold;
-height: 20px;">
-          INR 15,000
-        </ion-row>
-      </ion-row>
-    </ion-col>
-  </ion-row>
-
-
-</ion-card-content>
-</ion-card>
-    <!--<ion-row *ngFor="let card of cards">-->
-      <!--<ion-col col-2>{{card.thumb}}</ion-col>-->
-      <!--<ion-col col-4>-->
-        <!--<div style="color: #000000">esfsdfsd</div>-->
-        <!--<div>{{card.period}}</div>-->
-        <!--<div></div>-->
-      <!--</ion-col>-->
-      <!--<ion-col col-6>-->
-        <!---->
-      <!--</ion-col>-->
-    <!--</ion-row>-->
-
+    </ion-card-content>
+  </ion-card>
+  <!--<ion-row *ngFor="let card of cards">-->
+  <!--<ion-col col-2>{{card.thumb}}</ion-col>-->
+  <!--<ion-col col-4>-->
+  <!--<div style="color: #000000">esfsdfsd</div>-->
+  <!--<div>{{card.period}}</div>-->
+  <!--<div></div>-->
+  <!--</ion-col>-->
+  <!--<ion-col col-6>-->
+  <!---->
+  <!--</ion-col>-->
+  <!--</ion-row>-->
 </ion-content>

@@ -5,6 +5,8 @@ import { LoginPage } from '../login/login';
 @Component({
   selector: 'page-signup',
   templateUrl: 'signup.html',
+  styleUrls: ['signup.css'],
+
 })
 export class SignUpPage {
   constructor(public navCtrl: NavController) {}

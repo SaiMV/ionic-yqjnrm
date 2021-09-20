@@ -1,18 +1,18 @@
-page-overview .gradient-text {
+.gradient-text {
   background: -webkit-linear-gradient(360deg, rgba(254, 29, 47, 0.91), #ffbd31);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-page-overview .hotel-description {
+.hotel-description {
   line-height: 19px;
   color: grey;
   font-size: 11px;
 }
-page-overview .my-nav {
+.my-nav {
   list-style-type: disc;
 }
-page-overview .details-header-background {
-  background-image: url('../../assets/imgs/website-startups.jpg');
+.details-header-background {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnb7jKpJDkjP_VeXemZg3Q2qIIlhyEeWrIELSjSirql46mu866PC8JUG2vVsyqxo8zS2c&usqp=CAU');
   background-color: #ccc;
   min-height: 30vh;
   height: 30vh;
@@ -20,8 +20,8 @@ page-overview .details-header-background {
   background-repeat: no-repeat;
   background-size: cover;
 }
-page-overview .uuu {
-  background-image: url('../../assets/imgs/website-startups.jpg');
+.uuu {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnb7jKpJDkjP_VeXemZg3Q2qIIlhyEeWrIELSjSirql46mu866PC8JUG2vVsyqxo8zS2c&usqp=CAU');
   background-position: center;
   background-repeat: no-repeat;
   min-height: 20vh;
@@ -32,13 +32,13 @@ page-overview .uuu {
   color: #fff;
   border-radius: 7px;
 }
-page-overview .divi {
+.divi {
   margin-top: 45px;
   font-weight: bold;
   letter-spacing: 5px;
   line-height: 22px;
 }
-page-overview .col img {
+.col img {
   max-height: 100%;
   max-width: 100%;
   display: block;
