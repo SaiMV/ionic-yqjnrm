@@ -13,7 +13,7 @@
   display: block;
   width: 20px;
   height: 2px;
-  background-color: #052b23;
+  background-color: #ffffff;
 }
 .menu-icon span::before,
 .menu-icon span::after {
@@ -25,7 +25,7 @@
   display: block;
   width: 25px;
   height: 2px;
-  background-color: #052b23;
+  background-color: #ffffff;
   transition: transform 0.5s;
 }
 .menu-icon span::after {
@@ -135,4 +135,8 @@ ion-slides ion-slide {
   margin-left: 10px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.75);
+}
+.toolbar-background,
+.toolbar-background-md {
+  background-color: transparent !important;
 }

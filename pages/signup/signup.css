@@ -210,3 +210,7 @@ span p {
 .platform-tablet .icon {
   font-size: 2.5rem !important;
 }
+.toolbar-background,
+.toolbar-background-md {
+  background-color: transparent !important;
+}
