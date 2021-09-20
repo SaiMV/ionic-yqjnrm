@@ -9,8 +9,8 @@ import { DetailPage } from '../pages/detail/detail';
 import { IteneraryPage } from '../pages/itenerary/itenerary';
 import { OverviewPage } from '../pages/overview/overview';
 import { ReviewPage } from '../pages/review/review';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
+// import { StatusBar } from '@ionic-native/status-bar';
+// import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { SignUpPage } from '../pages/signup/signup';
 
@@ -40,8 +40,8 @@ import { SignUpPage } from '../pages/signup/signup';
     ReviewPage,
   ],
   providers: [
-    StatusBar,
-    SplashScreen,
+    // StatusBar,
+    // SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
   ],
 })
